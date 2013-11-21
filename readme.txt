@@ -15,7 +15,9 @@ BuddyPress Poke Plugin allows members to poke other members.
 
 = How it works:- =
 
-User visits other users profile and uses poke button.
+A logged in user can visit other users profile and uses poke button to poke him/her.
+
+Please do let us know your thoughts & suggestion on our blog [BuddyDev](http://buddydev.com/buddypress/get-your-users-poking-with-bp-poke-plugin/)
 
 == Installation ==
 

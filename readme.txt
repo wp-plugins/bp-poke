@@ -21,10 +21,11 @@ User visits other users profile and uses poke button.
 
 This section describes how to install the plugin and get it working.
 
-e.g.
+
 1. Download the zip file and extract
 1. Upload `bp-poke` directory to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu.
+1. Alternatively you can use WordPress Plugin installer from Dashboard->Plugins->Add New to add this plugin
 1. Enjoy
 
 == Frequently Asked Questions ==
@@ -45,4 +46,4 @@ No, It needs you to have BuddyPress Installed and activated
 * Initial release
 
 == Other Notes ==
- Please leave a comment on [BuddyDev](http://buddydev.com/)
+ Please leave a comment on [BuddyDev](http://buddydev.com/buddypress/get-your-users-poking-with-bp-poke-plugin/)

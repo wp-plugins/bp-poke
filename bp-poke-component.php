@@ -34,21 +34,18 @@ class BP_Poke_Component extends BP_Component {
 	/**
 	 * Setup globals
 	 *
-	 * The BP_GROUPS_SLUG constant is deprecated, and only used here for
-	 * backwards compatibility.
-	 *
-	 * @since BuddyPress (1.5)
-	 * @global BuddyPress $bp The one true BuddyPress instance
 	 */
 	function setup_globals() {
 		global $bp;
 
-		// All globals for messaging component.
+		if( !defined( 'BP_POKE_SLUG' ) )
+                    define( 'BP_POKE_SLUG', 'pokes' );
+
 		// Note that global_tables is included in this array.
 		$globals = array(
-			'slug'                  => 'poke',
+			'slug'                  => BP_POKE_SLUG,
 			'has_directory'         => false,
-            'notification_callback' => 'bp_poke_format_notifications',
+                        'notification_callback' => 'bp_poke_format_notifications',
 			'global_tables'         => false
 		);
 

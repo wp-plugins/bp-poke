@@ -3,7 +3,7 @@
 /**
  * Plugin Name: (BuddyDev)BP Poke
  * Plugin URI: http://buddydev.com/plugins/bp-poke/
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Anu Sharma
  * Author URI: http://buddydev.com/members/anusharma/
  * Description: Allow Users to poke each other
@@ -17,6 +17,7 @@ define( 'BP_POKE_DIR_URL', plugin_dir_url( __FILE__ ) );
 
 //plugin dir path with trailing slash
 define( 'BP_POKE_DIR_PATH', plugin_dir_path( __FILE__ ) );
+
 
 
 class BP_Poke_Helper{

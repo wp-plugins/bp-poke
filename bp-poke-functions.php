@@ -30,7 +30,7 @@ function bp_poke_get_poke_list_url( $user_id = false ){
     if( !$user_id )
         $user_id =  get_current_user_id ();
     
-    return bp_core_get_user_domain( $user_id ) . bp_get_activity_slug() . '/pokes/';
+    return bp_core_get_user_domain( $user_id ) . bp_get_activity_slug() . '/' . BP_POKE_SLUG . '/';
 }
 
 function bp_poke_get_poke_back_url( $user_id ){
@@ -79,7 +79,7 @@ function bp_poke_format_notifications( $action , $item_id, $secondary_item_id, $
  */
 function bp_poke_is_poke_action(){
     
-    if( is_user_logged_in() && bp_is_my_profile() && bp_is_activity_component() && bp_is_current_action( 'pokes' ) )
+    if( is_user_logged_in() && bp_is_my_profile() && bp_is_activity_component() && bp_is_current_action( BP_POKE_SLUG ) )
         return true;
     
     return false;

@@ -18,7 +18,7 @@ class BP_Poke_Screens  {
             if( is_user_logged_in() ){
                 
                 $settings_link = bp_loggedin_user_domain() . bp_get_activity_slug() . '/';
-                bp_core_new_subnav_item( array( 'name' => __( 'Poke', 'bp-poke' ), 'slug' => 'pokes', 'parent_url' => $settings_link, 'parent_slug' => $bp->activity->slug, 'screen_function' => array( $this, 'screen_poke_list' ), 'position' => 59, 'user_has_access' => bp_is_my_profile() ) );
+                bp_core_new_subnav_item( array( 'name' => __( 'Poke', 'bp-poke' ), 'slug' => BP_POKE_SLUG, 'parent_url' => $settings_link, 'parent_slug' => $bp->activity->slug, 'screen_function' => array( $this, 'screen_poke_list' ), 'position' => 59, 'user_has_access' => bp_is_my_profile() ) );
 
             }
             
@@ -47,7 +47,7 @@ class BP_Poke_Screens  {
             if( $pokes ):
                 echo '<ul class="poke-list">';
                 foreach( $pokes as $poke ):?>
-                  <li class="poke-item"> <?php printf( '<strong>%s</strong> poked you', bp_core_get_user_displayname( $poke['poked_by'] ) );?>
+                  <li class="poke-item"> <?php printf( __( '<strong>%s</strong> poked you', 'bp-poke' ), bp_core_get_userlink( $poke['poked_by'] ) );?>
                       <a class="poke-back"  title="<?php _e('Poke back', 'bp-poke' );?>" href="<?php echo bp_poke_get_poke_back_url( $poke['poked_by'] ) ;?>"> <?php _e( 'Poke Back', 'bp-poke' );?></a>
                    </li>
                    

@@ -42,8 +42,8 @@ function poke_clear_notifications(){
     if( !bp_poke_is_poke_action() )
         return;
     
-    bp_core_delete_notifications_by_type( bp_loggedin_user_id(), 'poke', 'user_poked' );
-    bp_core_delete_notifications_by_type( bp_loggedin_user_id(), 'poke', 'user_poked_back' );
+    bp_notifications_delete_notifications_by_type( bp_loggedin_user_id(), 'poke', 'user_poked' );
+    bp_notifications_delete_notifications_by_type( bp_loggedin_user_id(), 'poke', 'user_poked_back' );
 }
 
 //handle poke and poke back maction
@@ -57,7 +57,7 @@ function bp_poke_action_poking(){
         return ;
    
     $action  = isset( $_REQUEST['poke_action'] ) ? $_REQUEST['poke_action']: '';
-    $user_id = $_REQUEST['user_id'];
+    $user_id = isset( $_REQUEST['user_id'] ) ? (int) $_REQUEST['user_id'] : 0;
     if( !$action || !$user_id ) 
         return ;
    

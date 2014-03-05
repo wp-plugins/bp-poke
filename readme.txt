@@ -2,8 +2,8 @@
 Contributors: anusharma,sbrajesh,buddydev
 Tags: buddypress, user, poke
 Requires at least: BuddyPress 1.5
-Tested up to: BuddyPress 1.8.1
-Stable tag: 1.0.1
+Tested up to: BuddyPress 1.9.2
+Stable tag: 1.0.2
 License: GPLv2 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,25 +15,22 @@ BuddyPress Poke Plugin allows members to poke other members.
 
 = How it works:- =
 
-A logged in user can visit other users profile and uses poke button to poke him/her.
-
-Please do let us know your thoughts & suggestion on our blog [BuddyDev](http://buddydev.com/buddypress/get-your-users-poking-with-bp-poke-plugin/)
+User visits other users profile and uses poke button to poke them.
 
 == Installation ==
 
 This section describes how to install the plugin and get it working.
 
-
+e.g.
 1. Download the zip file and extract
 1. Upload `bp-poke` directory to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu.
-1. Alternatively you can use WordPress Plugin installer from Dashboard->Plugins->Add New to add this plugin
 1. Enjoy
 
 == Frequently Asked Questions ==
 
 = Does This plugin works without BuddyPress =
-No, It needs you to have BuddyPress Installed and activated
+No, It needs you to have BuddyPress Installed and activated. Please make sure that you have BuddyPress activity component enabled to use this plugin.
 
 == Screenshots ==
 
@@ -44,8 +41,12 @@ No, It needs you to have BuddyPress Installed and activated
 
 == Changelog ==
 
+= 1.0.2 =
+* Allow Redefining the poke slug using BP_POKE_SLUG constant
+* Link to the username who poked
+
 = 1.0 =
 * Initial release
 
 == Other Notes ==
- Please leave a comment on [BuddyDev](http://buddydev.com/buddypress/get-your-users-poking-with-bp-poke-plugin/)
+ Please leave a comment on [BuddyDev](http://buddydev.com/)

@@ -4,7 +4,8 @@ if ( !defined( 'ABSPATH' ) ) exit;
 //user/poke/
 function bpdev_poke_me_button(){
 
-
+    if( !is_user_logged_in() )
+        return ;
     if( !bp_is_user() || bp_is_my_profile() )
 
         return;

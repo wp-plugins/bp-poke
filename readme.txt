@@ -3,7 +3,7 @@ Contributors: anusharma,sbrajesh,buddydev
 Tags: buddypress, user, poke
 Requires at least: BuddyPress 1.5
 Tested up to: BuddyPress 1.9.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,9 @@ No, It needs you to have BuddyPress Installed and activated. Please make sure th
 4. This show poke back screen screenshot-4.png
 
 == Changelog ==
+
+= 1.0.3 =
+* Do not show the poke button if the user is not logged in
 
 = 1.0.2 =
 * Allow Redefining the poke slug using BP_POKE_SLUG constant

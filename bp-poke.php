@@ -3,7 +3,7 @@
 /**
  * Plugin Name: (BuddyDev)BP Poke
  * Plugin URI: http://buddydev.com/plugins/bp-poke/
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Anu Sharma
  * Author URI: http://buddydev.com/members/anusharma/
  * Description: Allow Users to poke each other

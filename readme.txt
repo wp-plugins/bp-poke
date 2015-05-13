@@ -2,8 +2,8 @@
 Contributors: anusharma,sbrajesh,buddydev
 Tags: buddypress, user, poke
 Requires at least: BuddyPress 1.5
-Tested up to: BuddyPress 1.9.2
-Stable tag: 1.0.3
+Tested up to: BuddyPress 2.2.3.1
+Stable tag: 1.0.4
 License: GPLv2 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ No, It needs you to have BuddyPress Installed and activated. Please make sure th
 
 == Changelog ==
 
+= 1.0.4 =
+* Fix notices for PHP 5.4
+
 = 1.0.3 =
 * Do not show the poke button if the user is not logged in
 
@@ -52,4 +55,4 @@ No, It needs you to have BuddyPress Installed and activated. Please make sure th
 * Initial release
 
 == Other Notes ==
- Please leave a comment on [BuddyDev](http://buddydev.com/)
+ Please leave a comment on [BuddyDev](http://buddydev.com/buddypress/get-your-users-poking-with-bp-poke-plugin/)

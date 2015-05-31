@@ -3,7 +3,7 @@ Contributors: anusharma,sbrajesh,buddydev
 Tags: buddypress, user, poke
 Requires at least: BuddyPress 1.5
 Tested up to: BuddyPress 2.2.3.1
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,9 @@ No, It needs you to have BuddyPress Installed and activated. Please make sure th
 4. This show poke back screen screenshot-4.png
 
 == Changelog ==
+
+= 1.0.5 =
+* Instead of deleting notification, mark it as read.
 
 = 1.0.4 =
 * Fix notices for PHP 5.4

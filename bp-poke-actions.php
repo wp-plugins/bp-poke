@@ -51,8 +51,8 @@ function poke_clear_notifications(){
 	if( !bp_poke_is_poke_action() )
         return;
     
-    bp_notifications_delete_notifications_by_type( bp_loggedin_user_id(), 'poke', 'user_poked' );
-    bp_notifications_delete_notifications_by_type( bp_loggedin_user_id(), 'poke', 'user_poked_back' );
+    bp_notifications_mark_notifications_by_type( bp_loggedin_user_id(), 'poke', 'user_poked' );
+    bp_notifications_mark_notifications_by_type( bp_loggedin_user_id(), 'poke', 'user_poked_back' );
 }
 
 //handle poke and poke back maction
